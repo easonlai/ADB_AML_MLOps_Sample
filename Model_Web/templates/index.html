@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Model Prediction Web</title>
+</head>
+<body>
+    <form method='post' action={{ url_for('predict') }}> 
+        <p>
+            <label for="fname">Number of times pregnant</label><br>
+            <input type='text' name='preg' value="6"/>
+        </p>
+        <p>
+            <label for="fname">Plasma glucose concentration a 2 hours in an oral glucose tolerance test</label><br>
+            <input type='text' name='plas' value="148"/>
+        </p>
+        <p>
+            <label for="fname">Diastolic blood pressure (mm Hg)</label><br>
+            <input type='text' name='pres' value="72"/>
+        </p>
+        <p>
+            <label for="fname">Triceps skin fold thickness (mm)</label><br>
+            <input type='text' name='skin' value="35"/>
+        </p>
+        <p>
+            <label for="fname">2-Hour serum insulin (mu U/ml)</label><br>
+            <input type='text' name='test' value="0"/>
+        </p>
+        <p>
+            <label for="fname">Body mass index (weight in kg/(height in m)^2)</label><br>
+            <input type='text' name='mass' value="33.6"/>
+        </p>
+        <p>
+            <label for="fname">Diabetes pedigree function</label><br>
+            <input type='text' name='pedi' value="0.627"/>
+        </p>
+        <p>
+            <label for="fname">Age (years)</label><br>
+            <input type='text' name='age' value="50"/>
+        </p>
+        <p>
+            <label for="fname">Class variable (1:tested positive for diabetes, 0: tested negative for diabetes)</label><br>
+            <input type='text' name='class' value="0"/>
+        </p>
+        <p>
+        <button type='submit'>Submit</button>
+    </p>    
+    </form>
+</body>
+</html>
